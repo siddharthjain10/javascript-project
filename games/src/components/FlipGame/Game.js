@@ -67,7 +67,7 @@ const Game = () => {
         setCount(count - 2);
         setEmojis(tempValues);
       }
-      setTimeout(() => resetChoices(), 500);
+      setTimeout(() => resetChoices(), 1200);
     }
   }, [firstOpen, secondOpen]);
 

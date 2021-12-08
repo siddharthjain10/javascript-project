@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game-heading{
+  font-size: 10vh;
+  color: white;
+  background-image: linear-gradient(to right, black , yellow);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.FlipGame{
+  margin: 2rem;
+}
+
+.TicTacToe{
+  margin: 2rem;
+}
