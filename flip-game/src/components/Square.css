@@ -1,0 +1,57 @@
+.square {
+    position: relative;
+    width: 18vh;
+    height: 18vh;
+    margin: 10px 10px;
+  }
+  
+  .square div {
+    width: 18vh;
+    height: 18vh;
+    display: block;
+    border: 1px solid black;
+    background-color: cyan;
+    
+  }
+  
+  /* 
+    Logic: to have 2 overlapping elements facing opposite direction
+    Onclick give update the classname for face and back
+    with same time for rotation it appears as if the card got flipped
+  */
+  
+  /* When flipped face card rotates away from user */
+  .face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6vh;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.05s;
+  }
+  
+  /* When flipped face card rotates toward user */
+  .flip .face {
+    transform: rotateY(0deg) translate(-50%, -50%);
+    transition-delay: 0.05s;
+  }
+  
+  /* Default towards User */
+  .back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6vh;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    transition: all ease-in 0.05s;
+  }
+  .back:hover {
+    cursor: pointer;
+  }
+  
+  /* When flipped face card rotates away from user */
+  .flip .back {
+    transform: rotateY(90deg);
+    transition-delay: 0.05s;
+  }
+  
